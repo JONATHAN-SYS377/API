@@ -1,0 +1,28 @@
+
+@api = http://localhost:3000/Recordatorio
+
+GET {{api}}
+
+###
+
+POST {{api}}
+Content-Type: application/json
+
+{
+    "Titulo": "tarea",
+    "Recordatorio": "primer dato"
+    
+}
+###
+PUT {{api}}/1
+Content-Type: application/json
+
+{
+    "Titulo": "Vamos",
+    "Recordatorio": "Ojala actualize"
+    
+}
+
+
+###
+DELETE {{api}}/4
